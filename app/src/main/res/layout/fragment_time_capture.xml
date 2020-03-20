@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+             tools:context="com.example.android.navigation.TimeCaptureFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:text="0"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" android:id="@+id/tuesdayTextBox"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="95dp"
+                android:layout_marginTop="47dp" app:layout_constraintTop_toTopOf="@+id/tuesdayLabel"/>
+        <TextView
+                android:text="0"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content" android:id="@+id/mondayTextBox"
+                app:layout_constraintEnd_toStartOf="@+id/tuesdayTextBox" android:layout_marginEnd="32dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="95dp"
+                android:layout_marginTop="47dp" app:layout_constraintTop_toTopOf="@+id/mondayLabel"/>
+        <Button
+                android:text="@string/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/submitButton"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginBottom="100dp" app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:text="@string/monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mondayLabel" app:layout_constraintEnd_toStartOf="@+id/tuesdayLabel"
+                android:layout_marginEnd="32dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="95dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="100dp"/>
+        <TextView
+                android:text="@string/tuesday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tuesdayLabel" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="95dp"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="100dp"/>
+        <Button
+                android:text="Return"
+                android:layout_width="93dp"
+                android:layout_height="40dp"
+                android:id="@+id/returnButton" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/submitButton" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

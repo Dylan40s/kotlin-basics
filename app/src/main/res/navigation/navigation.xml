@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation" app:startDestination="@id/homeScreenFragment">
+
+    <fragment android:id="@+id/homeScreenFragment" android:name="com.example.myworklifeapp.HomeScreenFragment"
+              android:label="HomeScreenFragment">
+        <action android:id="@+id/action_homeScreenFragment_to_timeCaptureFragment"
+                app:destination="@id/timeCaptureFragment"/>
+        <action android:id="@+id/action_homeScreenFragment_to_leaveFragment" app:destination="@id/leaveFragment"/>
+    </fragment>
+    <fragment android:id="@+id/timeCaptureFragment" android:name="com.example.myworklifeapp.TimeCaptureFragment"
+              android:label="TimeCaptureFragment"/>
+    <fragment android:id="@+id/leaveFragment" android:name="com.example.myworklifeapp.LeaveFragment"
+              android:label="fragment_leave" tools:layout="@layout/fragment_leave"/>
+</navigation>

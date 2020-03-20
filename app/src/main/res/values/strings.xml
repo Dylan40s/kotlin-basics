@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MyWorkLifeApp</string>
+    <string name="time_capture">Time Capture</string>
+    <string name="submit">Submit</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="startDate">Select Start Date</string>
+    <string name="endDate">Select End Date</string>
+    <string name="employeeName">Leave</string>
+    <string name="totalTime">0 Days</string>
+    <string name="submitLeave">Submit Leave</string>
+    <string name="hintUsername">Enter Username</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="leave">Leave</string>
+
+    <string-array name="leaveType">
+        <item>ANNUAL</item>
+        <item>SICK</item>
+    </string-array>
+</resources>
